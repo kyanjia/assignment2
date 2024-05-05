@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js'></script>
+    <title>Icon Template Square</title>
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <script>
+            var sound1 = new buzz.sound("sound/ball.mp3");
+            var sound2 = new buzz.sound("sound/tarot.mp3");
+            var sound3 = new buzz.sound("sound/cake.mp3");
+            var sound4 = new buzz.sound("sound/present.mp3");
+            var sound5 = new buzz.sound("sound/star.mp3");
+            var sound6 = new buzz.sound("sound/dreamcatcher.mp3");
+            var sound7 = new buzz.sound("sound/horse.mp3");
+            var sound8 = new buzz.sound("sound/crane.mp3");
+            var sound9 = new buzz.sound("sound/genie.mp3");
+
+            window.onload = function() {
+                document.getElementById("ball").addEventListener('click', function() {sound1.play();});
+                document.getElementById("tarot").addEventListener('click', function() {sound2.play();});
+                document.getElementById("cake").addEventListener('click', function() {sound3.play();});
+                document.getElementById("present").addEventListener('click', function() {sound4.play();});
+                document.getElementById("star").addEventListener('click', function() {sound5.play();});
+                document.getElementById("dreamcatcher").addEventListener('click', function() {sound6.play();});
+                document.getElementById("horse").addEventListener('click', function() {sound7.play();});
+                document.getElementById("crane").addEventListener('click', function() {sound8.play();});
+                document.getElementById("genie").addEventListener('click', function() {sound9.play();});
+            };
+        </script>
+
+        <div class="row">
+            <div class="image-container"><img id="ball" src="img/ballll.png" onmouseover="this.src='img/ballll2.png';"
+                onmouseout="this.src='img/ballll.png'; "height="200" width="200"/></div>
+            <div class="image-container"><img id="tarot" src="img/tarot.png" onmouseover="this.src='img/tarot2.png';"
+                onmouseout="this.src='img/tarot.png'; "height="200" width="200"/></div>
+            <div class="image-container"><img id="cake" src="img/cakey.png" onmouseover="this.src='img/cakey2.png';"
+                onmouseout="this.src='img/cakey.png'; "height="200" width="200"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="present" src="img/pres.png" onmouseover="this.src='img/pres2.png';"
+                onmouseout="this.src='img/pres.png'; "height="200" width="200"/></div>
+            <div class="image-container"><img id="star" src="img/star.png" onmouseover="this.src='img/star2.png';"
+                onmouseout="this.src='img/star.png'; "height="200" width="200"/></div>
+            <div class="image-container"><img id="dreamcatcher" src="img/dreamcatch.png" onmouseover="this.src='img/dreamcatch2.png';"
+                onmouseout="this.src='img/dreamcatch.png'; "height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="horse" src="img/horsey.png" onmouseover="this.src='img/horsey2.png';"
+                onmouseout="this.src='img/horsey.png'; "height="200" width="200"/></div>
+            <div class="image-container"><img id="crane" src="img/crane.png" onmouseover="this.src='img/crane2.png';"
+                onmouseout="this.src='img/crane.png'; "height="200" width="200"/></div>
+            <div class="image-container"><img id="genie" src="img/genie.png" onmouseover="this.src='img/genie2.png';"
+                onmouseout="this.src='img/genie.png'; "height="200" width="200"/></div>
+        </div>
+        
+    </body>
+    
+</html>
